@@ -71,8 +71,18 @@ public class TimePreference extends DialogPreference {
     protected View onCreateDialogView() {
         picker=new TimePicker(getContext());
     	ViewGroup vg = (ViewGroup)picker.getChildAt(0);
-    	NumberPicker am_pm = (NumberPicker)vg.getChildAt(1);
-    	
+        int num_children = vg.getChildCount();
+        NumberPicker am_pm = null;
+        for (int y=0;y<num_children;y++) {
+            if (vg.getChildAt(y) instanceof NumberPicker) {
+                am_pm = (NumberPicker)vg.getChildAt(y);
+            }
+        }
+
+        if (am_pm == null) {
+            return(null);
+        }
+
         if (is_am) {
         	am_pm_listener = new NumberPicker.OnValueChangeListener() {
         			
@@ -116,7 +126,8 @@ public class TimePreference extends DialogPreference {
         		}
         	};
         }
-        
+
+
         am_pm.setOnValueChangedListener(am_pm_listener);
         picker.setOnTimeChangedListener(time_changed_listener);
         

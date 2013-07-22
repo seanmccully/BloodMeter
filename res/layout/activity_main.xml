@@ -2,7 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:clickable="false">
 
     <TextView
         android:id="@+id/datetxt"
@@ -25,12 +26,12 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="17dp"
         android:background="@drawable/clickable_shape"
         android:text="@string/save"
-        android:layout_below="@+id/notesLbl"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="51dp"/>
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_marginLeft="62dp"/>
 
     <TextView
         android:id="@+id/glucoseText"
@@ -40,7 +41,9 @@
         android:text="@string/blood_sugar"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_below="@+id/datetxt"
-        android:layout_alignLeft="@+id/datetxt"/>
+        android:layout_alignLeft="@+id/datetxt"
+        android:linksClickable="false"
+        android:textStyle="bold"/>
 
     <EditText
         android:id="@+id/glucoseLvl"
@@ -79,19 +82,19 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_marginTop="19dp"
         android:layout_below="@+id/glucoseLvl"
-        android:layout_alignLeft="@+id/glucoseLvl"/>
+        android:layout_alignLeft="@+id/glucoseLvl"
+        android:textStyle="bold"/>
 
     <EditText
         android:id="@+id/notesTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/savebtn"
-        android:layout_alignParentLeft="true"
-        android:layout_alignRight="@+id/glucoseLvl"
-        android:layout_below="@+id/notesLbl"
-        android:layout_marginTop="24dp"
         android:background="#fff975"
-        android:inputType="textMultiLine" />
+        android:inputType="textMultiLine"
+        android:layout_alignBottom="@+id/savebtn"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignRight="@+id/glucoseLvl"
+        android:layout_below="@+id/textView2"/>
 
     <TextView
             android:layout_width="wrap_content"
