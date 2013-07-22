@@ -1,0 +1,20 @@
+<resources>
+
+    <string name="app_name">Glucose Recorder</string>
+    <string name="menu_settings">Settings</string>
+    <string name="notes_str">Notes (optional)</string>
+    <string name="title_activity_main">Glucose Recorder</string>
+	<string name="save">Save</string>
+	<string name="blood_sugar">Blood Glucose Level</string>
+	<string name="history">History</string>
+	<string name="graph">Graph History</string>
+	<string name="new_entry">New Entry</string>
+	<string name="check_am">Schedule AM Reading</string>
+	<string name="check_pm">Schedule PM Reading</string>
+	<string name="check_am_summary">Schedule a morning time to record reading.</string>
+	<string name="check_pm_summary">Schedule an evening time to record reading.</string>
+	<string name="scheduler">Schedule Reminders</string>
+	<string name="scheduler_summary">Schedule Reminders to take readings.</string>
+	<string name="am_avg_text">Average Morning Reading</string>
+	<string name="pm_avg_text">Average Evening Reading</string>
+</resources>

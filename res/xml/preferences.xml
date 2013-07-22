@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory
+            android:title="@string/scheduler">
+
+    	<CheckBoxPreference
+        	android:key="checkboxam_preference"
+        	android:persistent="true"
+            android:title="@string/check_am"
+            android:summary="@string/check_am_summary" />
+		
+    	<CheckBoxPreference
+        	android:key="checkboxpm_preference"
+            android:persistent="true"
+            android:title="@string/check_pm"
+            android:summary="@string/check_pm_summary" />
+    </PreferenceCategory>
+	<mctech.android.glucosemeter.TimePreference
+    android:key="checkbox_dialog"
+    android:persistent="true"
+    android:enabled="false" />
+	
+
+</PreferenceScreen>
