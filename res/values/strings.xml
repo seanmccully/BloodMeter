@@ -2,7 +2,7 @@
 
     <string name="app_name">Glucose Recorder</string>
     <string name="menu_settings">Settings</string>
-    <string name="notes_str">Notes (optional)</string>
+    <string name="notes_str">Notes</string>
     <string name="title_activity_main">Glucose Recorder</string>
 	<string name="save">Save</string>
 	<string name="blood_sugar">Blood Glucose Level</string>
@@ -17,4 +17,6 @@
 	<string name="scheduler_summary">Schedule Reminders to take readings.</string>
 	<string name="am_avg_text">Average Morning Reading</string>
 	<string name="pm_avg_text">Average Evening Reading</string>
+    <string name="notes_description">Enter Information Relevant to this reading.</string>
+    <string name="glucose_description">Enter Blood Sugar Recording.</string>
 </resources>
