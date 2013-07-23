@@ -28,10 +28,10 @@
         android:layout_height="wrap_content"
         android:background="@drawable/clickable_shape"
         android:text="@string/save"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="33dp"
         android:layout_below="@+id/textView2"
-        android:layout_toRightOf="@+id/textView2"
-        android:layout_marginLeft="62dp"/>
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="36dp"/>
 
     <TextView
         android:id="@+id/glucoseText"

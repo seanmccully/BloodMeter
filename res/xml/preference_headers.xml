@@ -2,7 +2,7 @@
 <preference-headers
         xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <header android:fragment="mctech.android.glucosemeter.Settings$PreferencesFragment"
+    <header android:fragment="mctech.android.glucosemeter.PreferencesFragment"
             android:title="@string/scheduler"
             android:summary="@string/scheduler_summary">
         <!-- Arbitrary key/value pairs can be included with a header as
